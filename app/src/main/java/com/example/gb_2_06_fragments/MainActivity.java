@@ -35,11 +35,16 @@ public class MainActivity extends AppCompatActivity implements ListFragment.OnCi
 
     @Override
     public void onCityClicked(City city) {
-        if (isLandscape) {
-            FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentManager fragmentManager = getSupportFragmentManager();
 
+        if (isLandscape) {
             fragmentManager.beginTransaction()
                     .replace(R.id.details_fragment, DetailsFragment.newInstance(city))
+                    .commit();
+        } else {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.container, DetailsFragment.newInstance(city))
+                    .addToBackStack(null) // чтобы работала кнопка "Назад"
                     .commit();
         }
     }
