@@ -7,8 +7,7 @@
     tools:context=".MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/list_fragment"
-        android:name="com.example.gb_2_06_fragments.ListFragment"
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
