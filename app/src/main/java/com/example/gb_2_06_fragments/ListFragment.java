@@ -38,7 +38,7 @@ public class ListFragment extends Fragment {
 
         List<City> cities = new CitiesRepository().getCities();
 
-        LinearLayout citiesList = (LinearLayout) view;
+        LinearLayout citiesList = view.findViewById(R.id.cities_list);
 
         for (City city : cities) {
             View cityView = LayoutInflater.from(requireContext())
