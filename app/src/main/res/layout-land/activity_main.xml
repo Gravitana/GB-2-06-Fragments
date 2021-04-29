@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/container"
+        android:id="@+id/list_fragment"
         android:name="com.example.gb_2_06_fragments.ListFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -23,7 +23,7 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/container"
+        app:layout_constraintStart_toEndOf="@id/list_fragment"
         app:layout_constraintTop_toTopOf="parent"
         tools:background="@color/teal_200"/>
 
